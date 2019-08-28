@@ -1,15 +1,13 @@
 import React from "react";
-import {hot} from "react-hot-loader";
-import TodoApp from "./components/TodoApp.jsx";
-import "./App.css";
+import { TodosProvider } from './Store.js'
+import { TodoList } from './TodoList.js'
 
 const App = () => {
-  return(
-    <div className="App">
-      <h1> Todo App </h1>
-      <TodoApp />
-    </div>
+  return (
+    <TodosProvider>
+      <TodoList />
+    </TodosProvider>
   );
 }
 
-export default hot(module)(App);
+export default App
