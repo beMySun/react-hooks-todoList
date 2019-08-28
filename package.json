@@ -1,9 +1,9 @@
 {
-  "name": "react-hooks-example",
+  "name": "react-hooks-todolist-example",
   "version": "1.0.0",
-  "description": "Example implementation for hooks based react app ",
+  "description": "Example implementation for hooks based react app",
   "main": "index.js",
-  "author": "Neeraj Suthar",
+  "author": "kk",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -11,20 +11,20 @@
     "build": "webpack --mode production"
   },
   "devDependencies": {
-    "@babel/cli": "7.1.0",
-    "@babel/core": "7.1.0",
-    "@babel/preset-env": "7.1.0",
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
     "@babel/preset-react": "7.0.0",
-    "babel-loader": "8.0.2",
-    "css-loader": "1.0.0",
-    "style-loader": "0.23.0",
-    "webpack": "4.19.1",
-    "webpack-cli": "3.1.1",
-    "webpack-dev-server": "3.1.8"
+    "babel-loader": "8.0.6",
+    "css-loader": "3.2.0",
+    "style-loader": "1.0.0",
+    "webpack": "4.39.3",
+    "webpack-cli": "3.3.7",
+    "webpack-dev-server": "3.8.0"
   },
   "dependencies": {
-    "react": "16.7.0-alpha.2",
-    "react-dom": "16.7.0-alpha.2",
-    "react-hot-loader": "4.6.0"
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-hot-loader": "4.12.12"
   }
 }
