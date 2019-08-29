@@ -13,12 +13,6 @@ export function TodoList() {
     todos.find(todo => todo.id === id).isCompleted = true
   })
 
-  useEffect(() => {
-    fetch("http://localhost:8080/getTodoList")
-      .then(response => response.json())
-      .then(data => console.log(data));
-  }, []);
-
   return (
     <ul>
       {todos.map(todo => (
