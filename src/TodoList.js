@@ -47,6 +47,7 @@ export function TodoList() {
     <>
       {loading ? <div> Loading </div> : <div> loaded</div>}
       <button onClick={addTodo}>Add</button>
+      <img src={undefined} />
       <ul>
         {todoList.map(todo => (
           <li key={todo.id} style={todo.isCompleted ? { color: 'red' } : { color: 'green' }}>
