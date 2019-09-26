@@ -16,6 +16,8 @@ export function TodoList() {
 
   useEffect(() => {
     queryRecords()
+    const lols = document.getElementsByClassName('lol')
+    console.log(lols);
   }, []);
 
   const queryRecords = () => {
@@ -48,7 +50,7 @@ export function TodoList() {
       {loading ? <div> Loading </div> : <div> loaded</div>}
       <button onClick={addTodo}>Add</button>
       <img src={undefined} />
-      <ul>
+      <ul className="lol">
         {todoList.map(todo => (
           <li key={todo.id} style={todo.isCompleted ? { color: 'red' } : { color: 'green' }}>
             <span>{todo.text || '/'}</span>
@@ -56,6 +58,9 @@ export function TodoList() {
             <button onClick={() => deleteTodo(todo.id)}>Delete</button>
           </li>
         ))}
+      </ul>
+      <ul className="lol">
+        <li>lol</li>
       </ul>
     </>
   )

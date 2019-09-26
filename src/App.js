@@ -1,6 +1,6 @@
 import React from "react";
-import { TodosProvider } from './Store.js'
-import { TodoList } from './TodoList.js'
+import { TodosProvider } from './Store'
+import { TodoList } from './TodoList'
 
 const App = () => {
   return (
