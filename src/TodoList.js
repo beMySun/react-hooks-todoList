@@ -51,18 +51,18 @@ export function TodoList() {
   };
 
   const ActionButton = (props) => {
-    return <button {...props} style={{margin: '0 10px'}}> { props.children } </button>
+    return <button {...props} style={{ margin: '0 10px' }}> {props.children} </button>
   }
 
   return (
     <>
       {loading ? <div> Loading </div> : <div> loaded </div>}
-      <input type="text" ref={(ref) => todoTextInput = ref} style={{marginRight: 10}}/>
+      <input type="text" ref={(ref) => todoTextInput = ref} style={{ marginRight: 10 }} />
       <ActionButton onClick={addTodo}> Add </ActionButton>
       <ul className="lol">
         {todoList.map(todo => (
           <li key={todo.id} style={todo.isCompleted ? { color: 'red', textDecoration: 'line-through' } : { color: 'green' }}>
-            <span>{ todo.text || '/' }</span>
+            <span>{todo.text || '/'}</span>
             <ActionButton onClick={() => completeTodo(todo.id, todo.isCompleted)}> Complete </ActionButton>
             <ActionButton onClick={() => deleteTodo(todo.id)}> Delete </ActionButton>
           </li>
